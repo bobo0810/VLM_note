@@ -15,6 +15,49 @@
 
    解决：二阶段指令微调后大幅改善。
 
+
+
+## 基本概念&术语
+
+1. SYSTEM
+
+   定义模型的角色
+
+   ```python
+   SYSTEM=('A chat between a curious user and an artificial '
+   'intelligence assistant. The assistant gives '
+   'helpful, detailed, and polite answers to the '
+   'user's questions. {system}\n '),
+   ```
+
+2. INSTRUCTION  
+
+   用户输入和助手回答的格式
+
+   ```python
+   'USER: {input} ASSISTANT:'
+   ```
+
+3. SEP  
+
+   “分隔符”（Separator）的缩写，表示不同对话部分的分隔符
+
+4. prompt_template
+
+   提示词模板
+
+   ```python
+   dict(
+     SYSTEM=('A chat between a curious user and an artificial '
+             'intelligence assistant. The assistant gives '
+             'helpful, detailed, and polite answers to the '
+             'user\'s questions. {system}\n '),
+     INSTRUCTION=('USER: {input} ASSISTANT:'),
+     SEP='\n'),
+   ```
+
+   
+
 # Code
 
 ## 1. Tokenizer文本编解码
