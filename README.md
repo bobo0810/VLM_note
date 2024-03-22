@@ -85,4 +85,11 @@ print("解码后的文本：", decoded_text)
 
 
 
-## 
+## 待学习
+
+AutoConfig   AutoTokenizer   AutoModel   AutoProcess
+
+transformer结构     位置编码作用   self attention   cross attention
+
+多头注意力（ 类似分组卷积）
+
